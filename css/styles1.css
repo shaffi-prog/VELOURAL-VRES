@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.index {
+    background-image: url('../images/backgroundhome.png');
+    background-size: cover; /* Adjust as per your design needs */
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Seasons';
+    src: url('../font/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+}
+
+.navbar-brand {
+    font-family: 'Seasons', Arial, sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+header {
+    color: black;
+    padding-top: 80px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+header .btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: black; /* Change button background color */
+    border-color: black; /* Change button border color */
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: 500px; /* Ensures image maintains aspect ratio */
+}
+
+.product-image .btn-primary {
+    position: absolute;
+    bottom: 60px; /* Adjust as needed */
+    left: 70%;
+    transform: translateX(-100%);
+    z-index: 1; /* Ensure button is above the image */
+}
+
+/* Integrated styles */
+.shop-now-btn {
+    position: absolute;
+    top: 400px; /* Y position */
+    left: 780.5px; /* X position */
+    width: 350.1px; /* Button width */
+    height: 79px; /* Button height */
+    background-color: #343a40; /* Dark button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    border-radius: 15px;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-now-btn:hover {
+    background-color: white;
+    color: #343a40; /* Dark text */
+}
+
+.image-section {
+    position: relative;
+}
+
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.profile-card:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container.mt-5 .content-section {
+    display: none;
+}
+
+.container.mt-5 .content-section.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container.mt-5 .content-text {
+    flex-grow: 1;
+    max-width: 500px;
+    color: black; /* Add this line to set the text color to black */
+}
+
+.container.mt-5 .content-text h2 {
+    margin-bottom: 10px;
+    color: black; /* Ensure h2 headings inherit the black color */
+}
+
+.container.mt-5 .content-text p {
+    margin-bottom: 0;
+    color: black; /* Ensure paragraphs inherit the black color */
+}
+
+.container.mt-5 .next-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 20px;
+    /* Positioning within the .container.mt-5 */
+    position: absolute;
+}
+
+.container.mt-5 .next-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.container.mt-5 .content-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px; /* Space between image and text */
+}
+
+.container.mt-5 .content-image-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.container.mt-5 .content-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+}
+
+.container.mt-5 .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: filter 0.3s ease, opacity 0.3s ease; /* Smooth transition for filter and opacity */
+    z-index: 1; /* Ensure it's above the main image */
+    opacity: 0.8; /* Initial opacity */
+}
+
+.container.mt-5 .overlay-image:hover {
+    filter: drop-shadow(0 0 10px white); /* White drop shadow */
+    opacity: 1; /* Higher opacity on hover */
+}
+
+
+
+.container.mt-5 .content-text {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.container.mt-5 .content-text h2 {
+    margin-bottom: 10px;
+}
+
+.container.mt-5 .content-text p {
+    margin-bottom: 0;
+}
+
+/* Ensuring consistency */
+.container.mt-5 {
+    position: relative;
+    min-height: 80vh;
+}
